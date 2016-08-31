@@ -1,0 +1,7 @@
+platform:ios,'7.0'
+target "simplyweibo" do
+pod "WeiboSDK", :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"
+pod "MBProgressHUD"
+pod 'YYKit', '~> 1.0.7'
+end
+

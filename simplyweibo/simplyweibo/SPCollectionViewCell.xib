@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SPCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="155"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIb-TS-oya">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="155"/>
+                        <connections>
+                            <action selector="selectBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="hvh-Bj-n0e"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rZ8-jK-OWt">
+                        <rect key="frame" x="0.0" y="0.0" width="279" height="155"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tMF-Md-gDY">
+                        <rect key="frame" x="259" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1Lh-u1-CqS"/>
+                            <constraint firstAttribute="width" constant="20" id="YzF-8h-6k7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tMF-Md-gDY" secondAttribute="trailing" id="1yx-sZ-yTO"/>
+                <constraint firstAttribute="trailing" secondItem="EIb-TS-oya" secondAttribute="trailing" id="ETX-aI-tlc"/>
+                <constraint firstItem="rZ8-jK-OWt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JOO-fd-pFO"/>
+                <constraint firstItem="tMF-Md-gDY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NUc-Ds-IRN"/>
+                <constraint firstAttribute="trailing" secondItem="rZ8-jK-OWt" secondAttribute="trailing" id="hfb-ux-9CU"/>
+                <constraint firstAttribute="bottom" secondItem="EIb-TS-oya" secondAttribute="bottom" id="jck-Qt-dIC"/>
+                <constraint firstAttribute="bottom" secondItem="rZ8-jK-OWt" secondAttribute="bottom" id="pWg-Yk-1eS"/>
+                <constraint firstItem="EIb-TS-oya" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pnl-IG-aWg"/>
+                <constraint firstItem="rZ8-jK-OWt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qN4-DX-pJR"/>
+                <constraint firstItem="EIb-TS-oya" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="r57-hO-6xu"/>
+            </constraints>
+            <size key="customSize" width="279" height="155"/>
+            <connections>
+                <outlet property="imageView" destination="rZ8-jK-OWt" id="dXz-J2-otk"/>
+                <outlet property="selectButton" destination="EIb-TS-oya" id="qYX-Qn-aqI"/>
+                <outlet property="selectView" destination="tMF-Md-gDY" id="Q2P-w0-OtR"/>
+            </connections>
+            <point key="canvasLocation" x="283.5" y="171.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
