@@ -20,7 +20,7 @@
     self.view.backgroundColor=RGB(227,227,227);
     [self setUI];
     
-    
+    //1
 }
 
 -(void)addFriendsAction:(UIBarButtonItem *)sender{
